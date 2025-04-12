@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://localhost:3000/');
+        const response = await fetch('https://passphrase-project-backend.onrender.com/');
 
         if (!response.ok) {
             throw new Error(`Failed to fetch analytics: ${response.status}`);

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
   
       try {
-        const response = await fetch('http://localhost:3000/', {
+        const response = await fetch('https://passphrase-project-backend.onrender.com/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
