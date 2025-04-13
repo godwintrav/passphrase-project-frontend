@@ -58,4 +58,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+// Toggle password/passphrase visibility
+document.querySelectorAll('.toggle-password').forEach(button => {
+  button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+      const input = document.getElementById(targetId);
+      
+      const isPassword = input.getAttribute('type') === 'password';
+      input.setAttribute('type', isPassword ? 'text' : 'password');
+      
+      // Optional: toggle eye emoji
+      button.textContent = isPassword ? '🙈' : '👁️';
+  });
+});  
   

@@ -9,10 +9,13 @@
 <body>
     <div class="login-container">
         <h2>Analytics Page</h2>
-        <p>Total Number of Correct Passphrases: </p>
-        <p>Total Number of Incorrect Passphrases: </p>
-        <p>Total Number of Correct Password: </p>
-        <p>Total Number of Incorrect Password: </p>
+        <div id="loader" class="loader">Loading analytics...</div>
+        <div id="analytics-content" style="display: none;">
+            <p>Total Number of Correct Passphrases: </p>
+            <p>Total Number of Incorrect Passphrases: </p>
+            <p>Total Number of Correct Password: </p>
+            <p>Total Number of Incorrect Password: </p>
+        </div>
     </div>
     <script src="analytics.js"></script>
 </body>
